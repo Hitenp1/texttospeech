@@ -4,8 +4,6 @@
 <head>
     <title>MoveAudio</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
@@ -30,27 +28,11 @@
         </div>
 
         <div class="jumbotron">
-            <h1>MoveAudio</h1>
+            <h1>Result</h1>
             <p class="lead"></p>
-            <form class="url-input" action="/outcome">
-            <label for="url" class="sr-only">URL</label>
-            <p><input type="text" name="urlenter" required autofocus>
-            <p><button id="url-submit" type="submit">Submit</button>
-            </p>
-            </form>
         </div>
 
-        <div class="media-audio">
-           <p>HEELDJFLKDSJFKLSD</p>
-            <audio controls="controls">
-              Your browser does not support the <code>audio</code> element.
-              <source src="/static/article.mp3" type="audio/mp3">
-            </audio>
-
-        </div>
-
-
-         <div class="textaudio">
+        <div class="textaudio">
                 <p>
                  {{ display }}
                 </p>
@@ -73,12 +55,6 @@
         </footer>
 
     </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-
-<script>window.jQuery || document.write('<script src="{{url_for('static', filename='jquery.js') }}">\x3C/script>')</script>
-
-<script src="../static/scripts.js"></script>
 
 </body>
 

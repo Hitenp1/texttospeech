@@ -11,8 +11,9 @@ def txtspeech(weburl):
 
   txtart = article.text
   tts = gTTS(text=txtart, lang='en')
-  tts.save("article.mp3")
+  tts.save("static/article.mp3")
   print ("MP3 Saved")
+  return txtart
 
 
 
